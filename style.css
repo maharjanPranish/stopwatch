@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-size: calc(15px + 0.390625vw);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: whitesmoke;
+}
+
+
+.title{
+    font-size: 2em;
+    position: absolute;
+    top: 10%;
+}
+
+
+.credit{
+    font-size: 0.7em;
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+}
+
+h1,
+h6 {
+    display: inline;
+}
+
+main {
+    min-width: fit-content;
+    width: 50vw;
+    padding: 1.5em;
+    background: wheat;
+    color: black;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 1px solid rgb(255, 174, 0);;
+    
+}
+
+.watch {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+}
+
+#counter {
+    align-self: last baseline;
+    padding-bottom: 0.255em;
+}
+
+.actionBtns {
+    width: fit-content;
+    margin: 1.5em auto 0 auto;
+}
+
+.buttons{
+    height: 3em;
+    min-width: fit-content;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px rigid black;
+    cursor: pointer;
+    background: rgb(255, 174, 0);
+    color: black;
+}
+
+#viewRecord{
+    color: inherit;
+    background: rgb(221, 221, 221);
+    text-decoration: none;
+    padding: 0.2em;
+    display: block;
+    margin: 1em auto 0 ;
+    background: rgb(255, 174, 0);
+    color: black;
+}
+
+#recordings{
+    position: absolute;
+    background: inherit;
+    border: 1px solid;
+    border-radius: 3em;
+    height: 50vh;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 1);
+    visibility: hidden;
+    padding: 1em;
+    z-index: 1;
+}
+
+#recordings h2{
+    text-align: center;
+    margin: 0 1em;
+    height: 5vh;
+}
+
+#timeRecords{
+    border: 2px solid;
+    border-radius: 2em;
+    height: 39vh;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar{
+    width: .5em;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #000;
+    border-radius: inherit;
+}
+
+::-webkit-scrollbar-button{
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner{
+    display: none;
+}
+
+#timeRecords div{
+margin: 1em;
+}
+
+
+
+@media (prefers-color-scheme:dark){
+    body{
+        background: black;
+        color: whitesmoke;
+    }
+
+    main{
+        box-shadow: 0 8px 32px 0 rgba(240, 240, 240, 0.4);
+
+    }
+
+    #recordings{
+        box-shadow: 0 8px 32px 0 rgb(255, 255, 255);
+    }
+}
+
+
+
+
+
+
+
+/* 
+width 400 bata responsive xaina
+
+
+*/
